@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin id="com.fabucorop.pdf-service">
+  <require plugin="org.dita.pdf2"/>
+  <require plugin="org.dita.pdf2.axf"/>
+  <require plugin="com.fabucorop.strings"/>
+  <transtype name="pdf-service" extends="org.dita.pdf2"/>
+  <feature extension="dita.conductor.target.relative" file="integrator.xml"/>
+  <feature extension="org.dita.pdf2.xsl.topicmerge" file="xsl/common/service_topicmergeImpl.xsl"/>
+</plugin>

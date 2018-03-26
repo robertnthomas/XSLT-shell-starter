@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin id="com.fabucorop.pdf-qsg">
+  <require plugin="org.dita.pdf2"/>
+  <require plugin="com.fabucorop.pdf-service"/>
+  <require plugin="org.dita.pdf2.axf"/>
+  <require plugin="com.fabucorop.strings"/>
+  <transtype name="pdf-qsg" extends="org.dita.pdf2"/>
+  <feature extension="dita.conductor.target.relative" file="integrator.xml"/>
+</plugin>

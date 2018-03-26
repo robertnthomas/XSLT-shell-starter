@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<project name="com.fabucorop.pdf-service">
+
+  <target name="dita2pdf-service" depends="dita2pdf-service.init, dita2pdf2"/>
+
+  <target name="dita2pdf-service.init">
+    <!-- Tagsmiths: Plugin com.fabucorp.pdf-qsg also uses this same customization.dir to share variables,
+         artwork, and font-settings with this plugin (plugin com.fabucorp.pdf-service). 24mar18-->
+    <property location="${dita.plugin.com.fabucorop.pdf-service.dir}/cfg" name="customization.dir"/>
+    <property name="pdf.formatter" value="ah"/>
+    <property name="org.dita.pdf2.i18n.enabled" value="true"/>
+    <property location="${dita.plugin.com.fabucorop.pdf-service.dir}/xsl/fo/service_topic2fo_shell.xsl"
+      name="args.xsl.pdf"/>
+    <property name="args.chapter.layout" value="BASIC"/>
+    <property name="args.bookmark.style" value="COLLAPSED"/>
+    <property name="args.gen.task.lbl" value="YES"/>
+    <property name="args.fo.include.rellinks" value="none"/>
+  </target>
+
+</project>

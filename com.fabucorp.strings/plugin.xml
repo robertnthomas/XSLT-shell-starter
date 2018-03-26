@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="com.fabucorop.strings">
+    <feature extension="dita.xsl.strings" value="xsl/common/strings.xml" type="file"/>
+</plugin>
